@@ -1,0 +1,47 @@
+{
+  "name": "free-arcs",
+  "author": "nitr1c",
+  "version": "0.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  },
+  "pebble": {
+    "capabilities": [
+        "configurable"
+    ],
+    "displayName": "Arcs",
+    "uuid": "79ca38db-f880-4cd3-b9b5-fe383671c602",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "USE_SECONDS",
+      "C_S_BG",
+      "C_S_FG"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "storageFormat": "png",
+          "name": "IMAGE_MENU_IMAGE",
+          "file": "images/MenuImage.png",
+          "targetPlatforms": null,
+          "menuIcon": true
+        }
+      ]
+    }
+  }
+}

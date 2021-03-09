@@ -1,0 +1,45 @@
+{
+    "targetPlatforms": [
+        "aplite", 
+        "basalt", 
+        "chalk", 
+        "diorite"
+    ], 
+    "displayName": "Arcs", 
+    "name": "free-arcs", 
+    "messageKeys": {
+        "USE_SECONDS": 10000, 
+        "C_S_BG": 10001, 
+        "C_S_FG": 10002
+    }, 
+    "companyName": "nitr1c", 
+    "enableMultiJS": true, 
+    "versionLabel": "0.0", 
+    "capabilities": [
+        "configurable"
+    ], 
+    "sdkVersion": "3", 
+    "appKeys": {
+        "USE_SECONDS": 10000, 
+        "C_S_BG": 10001, 
+        "C_S_FG": 10002
+    }, 
+    "longName": "Arcs", 
+    "shortName": "Arcs", 
+    "watchapp": {
+        "watchface": true
+    }, 
+    "resources": {
+        "media": [
+            {
+                "targetPlatforms": null, 
+                "name": "IMAGE_MENU_IMAGE", 
+                "storageFormat": "png", 
+                "file": "images/MenuImage.png", 
+                "menuIcon": true, 
+                "type": "bitmap"
+            }
+        ]
+    }, 
+    "uuid": "79ca38db-f880-4cd3-b9b5-fe383671c602"
+}

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Emulate pebble app on OG, PT, and PTR pebbles
+pebble clean
+pebble build

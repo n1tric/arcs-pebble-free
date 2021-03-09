@@ -1,0 +1,5 @@
+#!/bin/bash
+# Emulate pebble app on OG, PT, and PTR pebbles
+pebble install --emulator chalk &
+pebble install --emulator basalt &
+pebble install --emulator aplite &
