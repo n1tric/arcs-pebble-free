@@ -8,22 +8,22 @@ GRect bounds, bufFrame;
 /////////////////////////
 
 // Draws a dot
-static void draw_dot(GContext* c, GColor col, GPoint p, int thicc) {
+static void draw_dot(GContext* c, GColor col, GPoint p, int thick) {
   graphics_context_set_fill_color(c, col);
-  graphics_fill_circle(c, p, thicc);
+  graphics_fill_circle(c, p, thick);
 }
 
-static void draw_outline_dot(GContext* c, GColor colBg, GColor col, GPoint p, int thiccBg, int thicc) {
-  draw_dot(c, colBg, p, thiccBg);
-  draw_dot(c, col, p, thicc);
+static void draw_outline_dot(GContext* c, GColor colBg, GColor col, GPoint p, int thickBg, int thick) {
+  draw_dot(c, colBg, p, thickBg);
+  draw_dot(c, col, p, thick);
 }
 
 // Draws a notched arc, used here for time display
-static void draw_notch_arc(GContext* c, GColor col, int thicc, GRect bounds, int inset, int cutW, int ang, int cutL, int cutC) {
+static void draw_notch_arc(GContext* c, GColor col, int thick, GRect bounds, int inset, int cutW, int ang, int cutL, int cutC) {
 
   // Set color and thickness
   graphics_context_set_stroke_color(c, col);
-  graphics_context_set_stroke_width(c, thicc);
+  graphics_context_set_stroke_width(c, thick);
 
   // Draw arc
   bufFrame = grect_inset(bounds, GEdgeInsets(inset));
@@ -42,9 +42,9 @@ static void draw_notch_arc(GContext* c, GColor col, int thicc, GRect bounds, int
   graphics_draw_line(c, notch2, notch3);
 }
 
-static void draw_outline_notch_arc(GContext* c, GColor colBg, GColor col, int thiccBg, int thicc, GRect bounds, int inset, int cutW, int ang, int cutL, int cutC) {
-  draw_notch_arc(c, colBg, thiccBg, bounds, inset, cutW, ang, cutL, cutC);
-  draw_notch_arc(c, col, thicc, bounds, inset, cutW, ang, cutL, cutC);
+static void draw_outline_notch_arc(GContext* c, GColor colBg, GColor col, int thickBg, int thick, GRect bounds, int inset, int cutW, int ang, int cutL, int cutC) {
+  draw_notch_arc(c, colBg, thickBg, bounds, inset, cutW, ang, cutL, cutC);
+  draw_notch_arc(c, col, thick, bounds, inset, cutW, ang, cutL, cutC);
 }
 
 ///////////////////////////
